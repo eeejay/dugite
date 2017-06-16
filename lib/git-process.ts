@@ -112,7 +112,8 @@ export class GitProcess {
 
     const spawnArgs = {
       env,
-      cwd: path
+      cwd: path,
+      shell: false
     }
 
     const spawnedProcess = spawn(gitLocation, args, spawnArgs)
